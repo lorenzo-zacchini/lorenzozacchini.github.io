@@ -27,13 +27,13 @@
     <meta property="og:description" content="Personal website of Lorenzo Zacchini, Doctoral Researcher in Mathematics at Aalto University.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lorenzozacchini.github.io/">
-    <meta property="og:image" content="https://lorenzozacchini.github.io/photo.jpg">
+    <meta property="og:image" content="https://lorenzozacchini.github.io/photo-lecture.jpg">
 
     <!-- TWITTER CARD -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Lorenzo Zacchini — PhD Student in Mathematics">
     <meta name="twitter:description" content="Doctoral Researcher in Mathematics at Aalto University, working on harmonic analysis and fractional integrals on spaces of homogeneous type.">
-    <meta name="twitter:image" content="https://lorenzozacchini.github.io/photo.jpg">
+    <meta name="twitter:image" content="https://lorenzozacchini.github.io/photo-lecture.jpg">
 
     <style>
         body {
@@ -49,17 +49,28 @@ h1, h2 {
     font-family: 'Merriweather', serif;
 }
 
-       header { 
-           text-align: center; 
-           margin-bottom: 40px; 
-       }
+       .header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
 
-        img {
-            width: 180px;
-            border-radius: 50%;
-            display: block;
-            margin: 0 auto 20px auto;
-        }
+.header-photo img {
+    width: 260px;
+    height: auto;
+    border-radius: 6px;
+}
+
+.header-text h1 {
+    margin: 0;
+}
+
+.header-text p {
+    margin-top: 8px;
+    font-size: 1.05em;
+    color: #444;
+}
         h1 {
             margin-bottom: 0;
         }
@@ -84,11 +95,16 @@ h1, h2 {
 
 <body>
 
-    <header>
-        <img src="photo.jpg" alt="Photo of Lorenzo Zacchini">
+    <header class="header">
+    <div class="header-photo">
+        <img src="photo-lecture.jpg" alt="Lorenzo Zacchini lecturing at the blackboard">
+    </div>
+    <div class="header-text">
         <h1>Lorenzo Zacchini</h1>
-        <p>Doctoral Researcher in Mathematics · Aalto University</p>
-    </header>
+        <p>Doctoral Researcher in Mathematics<br>
+        Aalto University</p>
+    </div>
+</header>
 
     <h2>About Me</h2>
     <p>
